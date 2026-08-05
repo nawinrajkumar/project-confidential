@@ -3,10 +3,13 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import MemePlaceholder from "@/components/MemePlaceholder";
+import CameraTransition from "@/components/CameraTransition";
 
 export default function Story() {
   const router = useRouter();
+
   const [step, setStep] = useState(0);
+  const [showCamera, setShowCamera] = useState(false);
 
   const pages = [
     {
@@ -49,7 +52,9 @@ export default function Story() {
 
           <p>So... I built this instead.</p>
 
-          <MemePlaceholder title="Gym PR / Overthinking Meme" />
+          <MemePlaceholder
+            title="Gym PR / Overthinking Meme"
+          />
         </>
       ),
     },
@@ -73,7 +78,9 @@ export default function Story() {
 
           <br />
 
-          <MemePlaceholder title="Social Anxiety Meme" />
+          <MemePlaceholder
+            title="Social Anxiety Meme"
+          />
         </>
       ),
     },
@@ -104,7 +111,10 @@ export default function Story() {
             ...than spend months wondering what their answer would've been.
           </p>
 
-          <MemePlaceholder title="Thalapathy Superstar Pose Meme" />
+          <MemePlaceholder
+            src="/thalapathy_rajini.jpg"
+            title="Thalapathy Superstar Pose Meme"
+          />
         </>
       ),
     },
@@ -128,21 +138,38 @@ export default function Story() {
 
           <p>So.... What do you say? ❤️</p>
 
-          <MemePlaceholder title="Cute Coffee Meme ☕" />
+          <MemePlaceholder
+            src="/cat_memes.jpg"
+            title="Cute Coffee Meme ☕"
+          />
         </>
       ),
     },
   ];
 
   const nextPage = () => {
-    if (step < pages.length - 1) {
-      setStep(step + 1);
+    const nextStep = step + 1;
+
+    if (nextStep === 3 || nextStep === 4) {
+      setShowCamera(true);
+
+      setTimeout(() => {
+        setStep(nextStep);
+      }, 800);
+
+      setTimeout(() => {
+        setShowCamera(false);
+      }, 1400);
+    } else {
+      setStep(nextStep);
     }
   };
 
   return (
     <main className="min-h-screen bg-[#F9F6F2] flex items-center justify-center px-4 sm:px-6 md:px-8">
+
       <div className="w-full max-w-3xl text-center">
+
         {pages[step].title && (
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 md:mb-8 px-2">
             {pages[step].title}
@@ -162,6 +189,7 @@ export default function Story() {
           </button>
         ) : (
           <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mt-10 md:mt-14">
+
             <button
               onClick={() => router.push("/yes")}
               className="w-full sm:w-auto px-8 py-4 rounded-full bg-green-600 text-white hover:scale-105 transition"
@@ -175,9 +203,15 @@ export default function Story() {
             >
               🙈 No
             </button>
+
           </div>
         )}
+
       </div>
+
+      {/* Camera Animation */}
+      <CameraTransition show={showCamera} />
+
     </main>
   );
 }
