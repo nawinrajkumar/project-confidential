@@ -4,10 +4,10 @@ import Button from "./Button";
 
 export default function Hero() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-[#F9F6F2]">
-      <div className="text-center">
+    <main className="min-h-dvh flex items-center justify-center px-5 py-10 sm:px-8">
+      <div className="w-full max-w-xl text-center">
 
-        <h1 className="text-6xl font-bold mb-6">
+        <h1 className="text-4xl sm:text-6xl font-bold mb-6">
           Hi Nithya 👋
         </h1>
 

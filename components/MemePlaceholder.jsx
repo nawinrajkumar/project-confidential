@@ -9,7 +9,8 @@ export default function MemePlaceholder({ src, title }) {
           alt={title}
           width={500}
           height={500}
-          className="rounded-2xl shadow-xl object-cover"
+          sizes="(max-width: 640px) calc(100vw - 2.5rem), 500px"
+          className="h-auto w-full max-w-[500px] rounded-2xl shadow-xl object-cover"
         />
       ) : (
         <div className="w-full max-w-md h-64 rounded-2xl border-2 border-dashed border-gray-400 flex items-center justify-center bg-white">

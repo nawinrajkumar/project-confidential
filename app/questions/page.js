@@ -6,9 +6,9 @@ export default function Home() {
   const router = useRouter();
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center bg-[#F9F6F2] px-8">
+    <main className="min-h-dvh flex flex-col items-center justify-center px-5 py-10 sm:px-8">
 
-      <h1 className="text-5xl font-bold mb-8">
+      <h1 className="text-4xl sm:text-5xl font-bold mb-8">
         Hi Nithya 👋
       </h1>
 
