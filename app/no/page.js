@@ -13,6 +13,18 @@ export default function NoPage() {
     "🥹 Just one more thought? 👉👈",
   ];
 
+  const noTexts = [
+  "😅 I'm sure",
+  "🙈 Not today",
+  "🥹 Still No",
+  ];
+
+  const yesTexts = [
+  "😄 Wait, I changed my mind",
+  "☕ Let's go on that date",
+  "🥹 Actually... Yes",
+  ];
+
   const memes = [
     { title: "Meme for the first no", src: "/cat_in_tears.jpg" },
     { title: "Meme for the second no", src: "/cat_please.gif" },
@@ -63,7 +75,7 @@ export default function NoPage() {
             style={{ transform: `translateX(-50%) scale(${1 + count * 0.2})` }}
             className="absolute bottom-[12%] left-1/2 z-10 whitespace-nowrap rounded-full bg-green-600 px-8 py-4 text-lg font-semibold text-white shadow-lg transition-transform duration-500 hover:bg-green-700"
           >
-            Yes
+            {yesTexts[count]}
           </Link>
 
           <button
@@ -71,7 +83,7 @@ export default function NoPage() {
             style={positions[count]}
             className="absolute -translate-x-1/2 -translate-y-1/2 rounded-full bg-red-500 px-8 py-4 text-lg text-white shadow-lg transition-all duration-500 hover:scale-105"
           >
-          🙈 No
+            {noTexts[count]}
           </button>
         </>
       )}
@@ -134,7 +146,9 @@ export default function NoPage() {
               Hats off to the people who do this.
             </p>
 
-            <MemePlaceholder title="Postscript meme" />
+            <MemePlaceholder
+             title="Postscript meme"
+             src="/memes-3.jpg" />
 
 
           </div>

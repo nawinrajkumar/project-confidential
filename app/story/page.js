@@ -43,26 +43,28 @@ export default function Story() {
       content: (
         <>
           <p>
-            I've been banging my head trying to figure out how to get past the
-            "getting to know you" phase at the gym.
+            I've been banging my head trying to figure out how to get past the "getting to know you" phase at the gym.
           </p>
 
           <br />
 
           <p>
-            The problem is... while I'm there, I'm usually busy chasing a new
-            PR, overthinking random things, or getting lost in my own head (mostly unwanted data, math equations, unsolved bugs, etc). 
+            The problem is... while I'm there, I'm usually busy chasing a new PR, overthinking random things, or getting lost in my own head (mostly unwanted data, math equations, unsolved bugs, and everything in between).
           </p>
 
           <br />
 
           <p>
-            And, there's actually too much crowd in the gym.
+            Also, the gym is usually way too crowded.
           </p>
 
           <br />
 
-          <p> I have no clue to approach you. So... I built this instead.</p>
+          <p> So... I have absolutely no clue how to approach you and take this further. </p>
+
+          <br/>
+
+          <p> Which is why I built this instead. 😊 </p>
 
           <MemePlaceholder
             title="Gym PR / Overthinking Meme"
@@ -77,21 +79,18 @@ export default function Story() {
       content: (
         <>
           <p>
-            You probably don't know this, but every time I think about coming
-            over to talk to you, my brain runs out of tokens and decides to make it ten times harder
-            than it needs to be. 
+            You probably don't know this, but every time I think about coming over to talk to you, my brain behaves like a fried LLM which ran out of tokens and somehow manages to make it ten times harder than it needs to be. 
           </p>
 
           <br />
 
           <p>
-            Even then, I've genuinely enjoyed every conversation we've had so
-            far, no matter how short. 
+            Even then, I've genuinely enjoyed every conversation we've had so far, no matter how short.
           </p>
 
           <br />
 
-          <p>I enjoy having working out along with you, being around your company, somewhere I find myself to have an craving to see you smile</p>
+          <p>I've really enjoyed working out alongside you and just being around you. Somewhere along the way, I found myself looking forward to seeing you, making you laugh, and seeing that smile on your face.</p>
 
           <br />
 
@@ -118,6 +117,11 @@ export default function Story() {
             And I'm definitely not someone who can flirt my way into a date.
           </p>
 
+          <MemePlaceholder
+            title="WDYM I can't flirt"
+            src="/images.jpg"
+          />
+
           <br />
 
           <p>I'm more of a "vettu onnu, thundu moonu" kind of guy.</p>
@@ -125,8 +129,7 @@ export default function Story() {
           <br />
 
           <p>
-            I'd rather ask someone out, risk getting rejected, and walk away
-            with a dramatic Thalapathy-style superstar pose rather than spend months wondering what their answer would've been.
+            I'd rather ask you out, risk getting rejected, and walk away with a dramatic Thalapathy-style superstar pose... than spend months wondering "what if?"
           </p>
 
           <p>
@@ -156,7 +159,7 @@ export default function Story() {
 
           <p>I just have a bit of a starting problem.</p>
 
-          <p>Maybe.... that's something a coffee date could fix.</p>
+          <p>Maybe... that's something a first date could fix. 😉</p>
 
           <p>So.... What do you say? ❤️</p>
 
