@@ -5,7 +5,7 @@ export const YES_COPY = {
   missionTitle: "🎉 Mission Accepted",
   missionSubtitle: "Now comes the difficult part...",
   missionStatus:
-    "developer.exe has stopped working and would be jumping around for date ideas",
+    "Nawin.exe has stopped working and would be jumping around for date ideas once he sees the response mail",
   questionTitle: "I have one small question before I start planning...",
   questionBody: "What kind of first date sounds the most like you?",
   selectedDateLabel: "Your date type",
@@ -34,7 +34,7 @@ I'll disappear for a little while, do my homework, and come back with a plan wor
     "ChatGPT Codex 🤖",
     "Friend who I tortured to make sure her friend cringe this website 🫡",
     "Questionable Humour 🤖",
-    "Batman 🦇",
+    "Batman (obviously me) 🦇",
     "a little Courage and a blind gamble. 💪",
   ],
 };

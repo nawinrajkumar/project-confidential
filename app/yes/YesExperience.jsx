@@ -3,6 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useCallback, useEffect, useState } from "react";
 import { DATE_OPTIONS, LOADING_MESSAGES, YES_COPY } from "./constants";
+import MemePlaceholder from "@/components/MemePlaceholder";
 
 const STAGES = {
   MISSION: "mission",
@@ -60,6 +61,10 @@ function MissionScreen({ onComplete }) {
       <p className="mt-3 text-sm italic text-stone-500 sm:text-base">
         {YES_COPY.missionStatus}
       </p>
+      <MemePlaceholder
+        src="/absolute_cinema.jpg"
+        title="Mission Accepted Meme"
+      />
       <div className="mt-12 h-3 overflow-hidden rounded-full bg-stone-200/80">
         <motion.div
           initial={{ width: "0%" }}
@@ -210,6 +215,10 @@ function ConfirmationScreen({ selectedOption, onContinue }) {
         </p>
         <p className="mt-3 text-2xl font-semibold text-stone-900">{selectedOption.title}</p>
       </motion.div>
+      <MemePlaceholder
+        src="/neenga_vandha.jpg"
+        title="Your only responsibility is to show up. 😄"
+      />
       <motion.button
         type="button"
         onClick={onContinue}
